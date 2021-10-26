@@ -1,0 +1,113 @@
+.display {
+    background-image: url('https://images.unsplash.com/reserve/EnF7DhHROS8OMEp2pCkx_Dufer%20food%20overhead%20hig%20res.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.display-header {
+    background-color: var(--white);
+    margin-top: 100px;
+    padding: 30px 20px;
+    border-radius: 20px ;
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head-content {
+    width: 60%;
+}
+.head-img {
+    width: 30%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.head-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.heading {
+    font-size: 40px;
+    font-weight: 700;
+}
+.sub-heading {
+    font-size: 20px;
+    color: var(--grey);
+}
+.specs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: space-around;
+}
+.specs ul {
+    list-style: none;
+    margin-top: 20px;
+}
+.specs ul li {
+    line-height: 3em;
+    font-weight: 700;
+}
+.specs ul li .highlight {
+    line-height: 3em;
+    font-weight: 700;
+    color: var(--primary)
+}
+.display-content {
+    background-color: var(--white);
+    margin: 100px 0px 50px 0px;
+    padding: 30px 20px;
+    border-radius: 20px ;
+    width: 80%;
+}
+.ingred-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ingred-list li {
+    margin-left: 32px;
+    line-height: 2em;
+}
+.ingred-list, .step-list {
+    margin-left: 16px;
+}
+.step-list {
+    width: 70%;
+    line-height: 2em;
+    margin-bottom: 20px;
+}
+.sub-head-1, .sub-head-2 {
+    margin-bottom: 20px;
+}
+.sub-head-2 {
+    margin-top: 20px;
+}
+.display-buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.display-buttons button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 5px;
+}
+
+.display-buttons button.delete {
+    background-color: var(--primary);
+    color: #fff;
+}

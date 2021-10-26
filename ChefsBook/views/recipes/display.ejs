@@ -1,0 +1,80 @@
+<% layout('layouts/boilerplate.ejs') %>
+    <div class="display">
+        <div class="display-header">
+            <div class="head-content">
+                <h1 class="heading">
+                    <%= recipe.name %>
+                </h1>
+                <h2 class="sub-heading">Author: <%= recipe.author.username %>
+                </h2>
+                <p class="description">
+                    <%= recipe.description %>
+                </p>
+                <div class="specs">
+                    <ul>
+                        <li><span class="highlight">Prep Time:</span>
+                            <%= recipe.time.prep %>mins
+                        </li>
+                        <li><span class="highlight">Cook Time:</span>
+                            <%= recipe.time.cook %>mins
+                        </li>
+                        <li><span class="highlight">Total Time:</span>
+                            <%= ( recipe.time.prep + recipe.time.cook ) %>mins
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><span class="highlight">Cuisine:</span>
+                            Indian
+                        </li>
+                        <li><span class="highlight">Course:</span>
+                            <%= recipe.course %>
+                        </li>
+                        <li><span class="highlight">Diet:</span>
+                            <%= recipe.diet %>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><span class="highlight">Difficulty Level:</span>
+                            <%= recipe.level %>
+                        </li>
+                        <li><span class="highlight">Servings:</span>
+                            <%= recipe.servings %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head-img">
+                <% if(recipe.images.length) { %>
+                    <img src="<%= recipe.images[0].thumbnail %> " alt="head">
+                    <% } else { %>
+                        <img src="https://res.cloudinary.com/dk8jzfr34/image/upload/w_1000,ar_1:1,c_fill,g_auto,/v1635163555/chefsBook/uptmbhvoinwkdwctmc8f.jpg"
+                            alt="head">
+                        <% } %>
+            </div>
+        </div>
+        <div class="display-content">
+            <h2 class="sub-head-1">Ingredients:</h2>
+            <ul class="ingred-list">
+                <% for(let ingredient of recipe.ingredients){ %>
+                    <li>
+                        <%= ingredient %>
+                    </li>
+                    <% } %>
+            </ul>
+            <h2 class="sub-head-2">Steps to Prepare:</h2>
+            <ol class="step-list">
+                <% for(let step of recipe.steps){ %>
+                    <li>
+                        <%= step %>
+                    </li>
+                    <% } %>
+            </ol>
+            <div class="display-buttons">
+                <% if(currentUser && recipe.author.equals(currentUser._id)){ %>
+                    <a href="/recipes/<%= recipe._id %>/edit"><Button class="edit">Change Recipe</Button></a>
+                    <form action="/recipes/<%=recipe._id%>?_method=DELETE" method="POST"><Button type="submit"
+                            class="delete">Delete Recipe</Button></form>
+                    <% } %>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,13 @@
+<nav class='nav'>
+    <div class='nav-heading'><a href="/"><img src="/images/logo-NoBg.svg" alt=""></a></div>
+    <div class="nav-controller" id="nav-btn"><span class="nav-btn">| |</span></div>
+    <ul class='nav-list'>
+        <li class='list-item'><a href="/recipes">All Recipes</a></li>
+        <li class='list-item'><a href="/recipes/new">Create New Recipe</a></li>
+        <% if(!currentUser){ %>
+            <li class='list-item'><a href="/login">Member Login</a></li>
+            <% } else { %>
+                <li class='list-item'><a href="/logout">Logout</a></li>
+                <% } %>
+    </ul>
+</nav>

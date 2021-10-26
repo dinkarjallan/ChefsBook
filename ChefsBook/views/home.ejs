@@ -1,0 +1,69 @@
+<% layout('layouts/boilerplate.ejs') %>
+    <header class="header">
+        <h1 class="heading">Hey, How you cookin'?</h1>
+        <form action="/recipes/search" method="GET" class="search-form">
+            <input class="search-bar" type="text" name="keyword" placeholder="Search for your favourite Dish...">
+            <button class="search-button" type="submit">Search</button>
+        </form>
+    </header>
+    <section class="suggestions">
+        <h2 class="heading">Suggestions</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://res.cloudinary.com/dk8jzfr34/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1635191259/chefsBook/l4mmcamfq8igiv8aze8q.jpg"
+                        alt="card">
+                </div>
+                <div class="card-content">
+                    <div class="card-head">
+                        <h3>Chicken Biryani</h3>
+                        <a href="/recipes/617709f892c871ff23d6e006"><button type="button" class="card-button">View
+                                Recipe</button></a>
+                    </div>
+                    <div class="text">
+                        <p>One of the most royal delicacies that you can enjoy on any occasion or festival, Chicken
+                            Biryani is the epitome of a
+                            one-pot meal. Well, no one can resist the sight of the aromatic and delicious Chicken
+                            Biryani recipe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://res.cloudinary.com/dk8jzfr34/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1635192343/chefsBook/lrqsz0ezbwtkeavgxtgm.jpg"
+                        alt="card">
+                </div>
+                <div class="card-content">
+                    <div class="card-head">
+                        <h3>Veggie Pizza</h3>
+                        <a href="/recipes/61770e3492c871ff23d6e030"><button type="button" class="card-button">View
+                                Recipe</button></a>
+                    </div>
+                    <div class="text">
+                        <p>Treat yourself to the best homemade pizza that’s completely customizable to your tastes. Plan
+                            your next pizza party
+                            using my foolproof recipe for making perfect veggie pizza from scratch every time!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://res.cloudinary.com/dk8jzfr34/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1635193929/chefsBook/opfey2k4axkg8vjcogoh.jpg"
+                        alt="card">
+                </div>
+                <div class="card-content">
+                    <div class="card-head">
+                        <h3>Chocolate Cookies</h3>
+                        <a href="/recipes/6177146692c871ff23d6e096"><button type="button" class="card-button">View
+                                Recipe</button></a>
+                    </div>
+                    <div class="text">
+                        <p>homemade chocolate chip cookies are the right choice for lazy summer afternoons, unexpected
+                            snow days or that holiday
+                            party that just wouldn’t be the same without these beauties on the cookie tray.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

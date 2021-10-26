@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/app.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/display.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/home.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/cards.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/recipeForm.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/userStyles.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/notFound.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/media.css" type="text/css">
+    <title>Chef's Book</title>
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+        <%- body %>
+            <%- include('../partials/footer') %>
+
+                <!-- serving static JS files -->
+                <script src="/javascripts/app.js"></script>
+                <script src="/javascripts/recipeForm.js"></script>
+</body>
+
+</html>

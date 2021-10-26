@@ -1,0 +1,119 @@
+.page-wrap {
+    /* background-color: red; */
+    background-image: url('https://images.unsplash.com/photo-1509358271058-acd22cc93898?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.page-header {
+    width: 50%;
+    padding: 30px 40px 0px 40px;
+    font-size: 40px;
+    background-color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    width: 50%;
+    padding: 50px 40px 20px 40px;
+}
+.form label {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.form textarea {
+    resize: vertical;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.form input, .form textarea, .form select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    height: 3em;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    caret-color: var(--primary);
+}
+.form input::placeholder, .form textarea::placeholder {
+    color: #3a3a3a;
+}
+.form .file-input {
+    border: none;
+}
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.file-input::before {
+  content: 'Select images';
+  display: inline-block;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.file-input:hover::before {
+  border-color: black;
+}
+.file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.form button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.button-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button-wrap button {
+    box-sizing: border-box;
+    width: 50%;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+.button-wrap button.add {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: #fff;
+}
+.button-wrap button.remove, .form button.submit-btn {
+    border: 1px solid var(--primary);
+    color: #fff;
+    background-color: var(--primary) ;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.wrapper input {
+    width: 100%;
+}
+.form .submit-btn {
+    padding: 10px 20px;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+}

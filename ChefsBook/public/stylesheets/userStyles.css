@@ -1,0 +1,50 @@
+.user-wrapper {
+    height: 70vh;
+    background-image: url('https://images.unsplash.com/photo-1576867757603-05b134ebc379');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form-wrap {
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+.form-wrap h1 {
+    margin-bottom: 20px;
+}
+.form-wrap form {
+    display: flex;
+    flex-direction: column;
+}
+.form-wrap form input, .form-wrap form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    height: 3em;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    caret-color: var(--primary);
+}
+.form-wrap form label {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.form-wrap form button {
+    cursor: pointer;
+}
+.form-wrap h2 {
+    font-size: 18px;
+}
+.form-wrap h2 .link{
+    color: var(--primary)
+}
+.form-login button, .form-register button {
+    border: 1px solid var(--primary);
+    color: #fff;
+    background-color: var(--primary) ;
+}

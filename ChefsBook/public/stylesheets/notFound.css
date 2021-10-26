@@ -1,0 +1,26 @@
+section.not-found {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.not-found img {
+    width: 50%;
+}
+section.not-found h1 {
+    font-size: 24px;
+}
+
+@media only screen and (min-width: 760px) {
+    section.not-found {
+        justify-content: flex-start;
+    }
+    section.not-found h1 {
+        font-size: 48px;
+    }
+    section.not-found img {
+        width: 40%;
+    }
+
+}

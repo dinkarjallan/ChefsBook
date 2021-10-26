@@ -1,0 +1,14 @@
+<% layout('layouts/boilerplate.ejs') %>
+    <div class="user-wrapper">
+        <div class="form-wrap">
+            <h1 class="form-header">Member login</h1>
+            <form action="/login" method="POST" class="form-login" required>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <h2 class="sub-header">Not a Member? Become one, <a href="/register" class="link">register</a> with us.</h2>
+        </div>
+    </div>

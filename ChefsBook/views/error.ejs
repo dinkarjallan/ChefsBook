@@ -1,0 +1,12 @@
+<% layout('layouts/boilerplate.ejs') %>
+    <section class="not-found">
+        <img src="/images/error.svg" alt="error-404">
+        <h1>
+            <%= err.message %>
+        </h1>
+        <p>
+            <% if (process.env.NODE_ENV !=="production" ) { %>
+                <%= err.stack %>
+                    <% } %>
+        </p>
+    </section>
